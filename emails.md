@@ -19,7 +19,7 @@
   "address": "john@aceofsales.com",
   "created_at": 1366133271,
   "updated_at": 1366133271,
-  "contact": "/contacts/:id"
+  "contact": "/contacts/:id.json"
 }
 ```
 

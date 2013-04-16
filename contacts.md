@@ -11,7 +11,7 @@
 
 ## Contact
 
-*Note:* First & last name are required.
+*Note:* ```first_name``` & ```last_name``` are required.
 
 ```json
 {
