@@ -24,7 +24,7 @@
 }
 ```
 
-## Get Web Address
+## Get Web Addresses
 
 * ```GET /contacts/:contact_id/web_addresses.json``` returns all web addresses for specified contact.
 
