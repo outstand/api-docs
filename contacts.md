@@ -2,12 +2,12 @@
 
 ## Supported Actions
 
-* [Contact Attributes](contact)
-* [Get Contacts](get-contacts)
-* [Get Contact](get-contact)
-* [Create Contact](create-contact)
-* [Update Contact](update-contact)
-* [Delete Contact](delete-contact)
+* [Contact Attributes](#contact)
+* [Get Contacts](#get-contacts)
+* [Get Contact](#get-contact)
+* [Create Contact](#create-contact)
+* [Update Contact](#update-contact)
+* [Delete Contact](#delete-contact)
 
 ## Contact
 
