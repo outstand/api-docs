@@ -3,7 +3,7 @@
 ## Supported Actions
 
 * [Address](#address)
-* [Get Address](#get-address)
+* [Get Addresses](#get-addresses)
 * [Get Address](#get-address)
 * [Create Address](#create-address)
 * [Update Address](#update-address)

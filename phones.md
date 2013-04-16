@@ -3,7 +3,7 @@
 ## Supported Actions
 
 * [Phone](#phone)
-* [Get Phone](#get-phone)
+* [Get Phones](#get-phones)
 * [Get Phone](#get-phone)
 * [Create Phone](#create-phone)
 * [Update Phone](#update-phone)
@@ -24,7 +24,7 @@
 }
 ```
 
-## Get Phone
+## Get Phones
 
 * ```GET /contacts/:contact_id/phones.json``` returns all phones for specified contact.
 

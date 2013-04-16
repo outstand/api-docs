@@ -3,7 +3,7 @@
 ## Supported Actions
 
 * [Email](#email)
-* [Get Email](#get-email)
+* [Get Emails](#get-emails)
 * [Get Email](#get-email)
 * [Create Email](#create-email)
 * [Update Email](#update-email)
@@ -23,7 +23,7 @@
 }
 ```
 
-## Get Email
+## Get Emails
 
 * ```GET /contacts/:contact_id/emails.json``` returns all emails for specified contact.
 
