@@ -2,24 +2,16 @@
 
 ## Supported Actions
 
+* [Contact Attributes](contact)
 * [Get Contacts](get-contacts)
 * [Get Contact](get-contact)
 * [Create Contact](create-contact)
 * [Update Contact](update-contact)
 * [Delete Contact](delete-contact)
 
-## Get Contacts
+## Contact
 
-* ```/contacts.json``` returns all contacts for the account
-* ```/groups/:group_id/contacts.json``` returns all contacts for specified group
-
-```json
-[ [Contact](get-contact) ]
-```
-
-## Get Contact
-
-* ```GET /contacts/:id.json``` returns specified contact
+*Note:* First & last name are required.
 
 ```json
 {
@@ -50,6 +42,21 @@
 }
 ```
 
+## Get Contacts
+
+* ```/contacts.json``` returns all contacts for the account
+* ```/groups/:group_id/contacts.json``` returns all contacts for specified group
+
+```json
+[ Contact ]
+```
+See [Contact](contact) for JSON representation.
+
+## Get Contact
+
+* ```GET /contacts/:id.json``` returns specified contact (see [Contact](contact) for JSON representation)
+
+
 ## Create Contact
 
 * ```POST /contacts.json``` creates a new contact from parameters
@@ -61,7 +68,6 @@
   "last_name" : "Smith"
 }
 ```
-*Note:* First & last name are required.
 
 On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header of the new contact.
 
