@@ -57,7 +57,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body. If the user does not have permission to update the group, it returns ```403 Forbidden```.
+On success, this returns ```200 OK``` and JSON representation in response body.
 
 ## Delete Group
 
