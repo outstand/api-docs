@@ -2,19 +2,61 @@
 
 ## Supported Actions
 
-* [Get Email Address] (#get-email-address)
+* [Email](#email-address)
+* [Get Email](#get-email)
+* [Get Email](#get-email)
+* [Create Email](#create-email)
+* [Update Email](#update-email)
+* [Delete Email](#delete-email)
 
-## Get Email Address
+## Email
 
- ```GET /emails/1```
+*Note:* ```address``` is required.
 
-```
+```json
 {
   id: 1,
   address: "john@aceofsales.com",
   created_at: 1366133271,
   updated_at: 1366133271,
-  contact: "/contacts/1"
+  contact: "/contacts/:id"
 }
 ```
 
+## Get Email
+
+* ```GET /contacts/:contact_id/emails.json``` returns all emails for specified contact.
+
+Returns an array of emails. (See [Email](#email) for JSON representation.)
+
+## Get Email
+
+ * ```GET /emails/1``` returns specified email. (See [Email](#email) for JSON representation.)
+
+## Create Email
+
+* ```POST /contacts/:contact_id/emails.json``` creates a new email from parameters belonging to specified contact
+
+```json
+{
+  "address" : "john@example.com"
+}
+```
+
+On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new email.
+
+## Update Email
+
+* ```PUT /emails/:id.json``` updates email from parameters
+
+```json
+{
+  "address" : "john@example.com"
+}
+```
+
+On success, this returns ```200 OK``` and JSON representation in response body.
+
+## Delete Email
+
+* ```DELETE /emails/:id.json``` will delete the specified email and return ```204 No Content``` on success. If the user does not have permission to delete the email, it returns ```403 Forbidden```.

@@ -66,7 +66,7 @@ Returns an array of contacts. See [Contact](contact) for JSON representation.
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header of the new contact.
+On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new contact.
 
 ## Update Contact
 
@@ -79,7 +79,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body
+On success, this returns ```200 OK``` and JSON representation in response body.
 
 ## Delete Contact
 
