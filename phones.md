@@ -45,7 +45,7 @@ Returns an array of phones. (See [Phone](#phone) for JSON representation.)
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new phone.
+On success, this returns ```201 Created```, [JSON representation](#phone) in response body, and ```Location``` header with the location of the new phone.
 
 ## Update Phone
 
@@ -58,7 +58,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body.
+On success, this returns ```200 OK``` and [JSON representation](#phone) in response body.
 
 ## Delete Phone
 

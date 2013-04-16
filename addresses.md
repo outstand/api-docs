@@ -54,7 +54,7 @@ Returns an array of addresses. (See [Address](#address) for JSON representation.
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new address.
+On success, this returns ```201 Created```, [JSON representation](#address) in response body, and ```Location``` header with the location of the new address.
 
 ## Update Address
 
@@ -70,7 +70,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body.
+On success, this returns ```200 OK``` and [JSON representation](#address) in response body.
 
 ## Delete Address
 

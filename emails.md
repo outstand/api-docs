@@ -43,7 +43,7 @@ Returns an array of emails. (See [Email](#email) for JSON representation.)
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new email.
+On success, this returns ```201 Created```, [JSON representation](#email) in response body, and ```Location``` header with the location of the new email.
 
 ## Update Email
 
@@ -55,7 +55,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body.
+On success, this returns ```200 OK``` and [JSON representation](#email) in response body.
 
 ## Delete Email
 

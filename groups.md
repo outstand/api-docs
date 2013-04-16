@@ -45,7 +45,7 @@ Returns an array of groups. (See [Group](#group) for JSON representation.)
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new group.
+On success, this returns ```201 Created```, [JSON representation](#group) in response body, and ```Location``` header with the location of the new group.
 
 ## Update Group
 
@@ -57,7 +57,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body.
+On success, this returns ```200 OK``` and [JSON representation](#group) in response body.
 
 ## Delete Group
 

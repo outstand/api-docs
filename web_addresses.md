@@ -45,7 +45,7 @@ Returns an array of web addresses. (See [Web Address](#web-address) for JSON rep
 }
 ```
 
-On success, this returns ```201 Created```, JSON representation in response body, and ```Location``` header with the location of the new web address.
+On success, this returns ```201 Created```, [JSON representation](#web-address) in response body, and ```Location``` header with the location of the new web address.
 
 ## Update Web Address
 
@@ -58,7 +58,7 @@ On success, this returns ```201 Created```, JSON representation in response body
 }
 ```
 
-On success, this returns ```200 OK``` and JSON representation in response body.
+On success, this returns ```200 OK``` and [JSON representation](#web-address) in response body.
 
 ## Delete Web Address
 
