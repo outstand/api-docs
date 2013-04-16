@@ -30,7 +30,7 @@
 }
 ```
 
-## Get Address
+## Get Addresses
 
 * ```GET /contacts/:contact_id/addresses.json``` returns all addresses for specified contact.
 
