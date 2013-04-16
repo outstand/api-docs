@@ -2,7 +2,7 @@
 
 ## Supported Actions
 
-* [Phone](#phone-address)
+* [Phone](#phone)
 * [Get Phone](#get-phone)
 * [Get Phone](#get-phone)
 * [Create Phone](#create-phone)
@@ -17,7 +17,7 @@
 {
   "id": 1,
   "number": "800-865-7496",
-  "location": "work",
+  "location": "Work",
   "created_at": 1366133271,
   "updated_at": 1366133271,
   "contact": "/contacts/:id.json"

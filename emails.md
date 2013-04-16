@@ -2,7 +2,7 @@
 
 ## Supported Actions
 
-* [Email](#email-address)
+* [Email](#email)
 * [Get Email](#get-email)
 * [Get Email](#get-email)
 * [Create Email](#create-email)
