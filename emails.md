@@ -31,7 +31,7 @@ Returns an array of emails. (See [Email](#email) for JSON representation.)
 
 ## Get Email
 
- * ```GET /emails/1``` returns specified email. (See [Email](#email) for JSON representation.)
+ * ```GET /emails/:id.json``` returns specified email. (See [Email](#email) for JSON representation.)
 
 ## Create Email
 
