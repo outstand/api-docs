@@ -2,9 +2,9 @@
 
 ## Supported Actions
 
-* [Get Email Address][get-contact]
+* [Get Email Address] (#get-email-address)
 
-[get-contact] ## Get Email Address
+## Get Email Address
 
  ```GET /emails/1```
 
