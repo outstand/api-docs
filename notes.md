@@ -1,0 +1,68 @@
+# Notes
+
+## Supported Actions
+
+* [Note](#note)
+* [Get Notes](#get-notes)
+* [Get Note](#get-note)
+* [Create Note](#create-note)
+* [Update Note](#update-note)
+* [Delete Note](#delete-note)
+
+## Note
+
+*Note:* ```title``` is required.
+
+```json
+{
+  "id": 1,
+  "title": "Example",
+  "text": "Lorem ipsum...",
+  "created_at": 1366133271,
+  "updated_at": 1366133271,
+  "parent": "/contacts/:id.json" || "/groups/:id.json"
+}
+```
+
+## Get Notes
+
+* ```GET /contacts/:contact_id/notes.json``` returns all notes for specified contact.
+* ```GET /groups/:group_id/notes.json``` returns all notes for specified group.
+
+Returns an array of notes. (See [Note](#note) for JSON representation.)
+
+## Get Note
+
+ * ```GET /notes/:id.json``` returns specified note. (See [Note](#note) for JSON representation.)
+
+## Create Note
+
+* ```POST /contacts/:contact_id/notes.json``` creates a new note from parameters belonging to specified contact
+* ```POST /groups/:group_id/notes.json``` creates a new note from parameters belonging to specified group
+
+```json
+{
+  "title": "Lunch meeting",
+  "text": "Lorem ipsum..."
+}
+```
+
+On success, this returns ```201 Created```, [JSON representation](#note) in response body, and ```Location``` header with the location of the new note.
+
+## Update Note
+
+* ```PUT /notes/:id.json``` updates note from parameters
+
+```json
+{
+  "title": "Lunch meeting",
+  "text": "Lorem ipsum..."
+}
+```
+
+On success, this returns ```200 OK``` and [JSON representation](#note) in response body.
+
+## Delete Note
+
+* ```DELETE /notes/:id.json``` will delete the specified note and return ```204 No Content``` on success. If the user does not have permission to delete the note, it returns ```403 Forbidden```.
+
