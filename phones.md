@@ -11,7 +11,8 @@
 
 ## Phone
 
-*Note:* ```number``` & ```location``` are required. Valid locations are: ```Work```, ```Home```, ```Mobile```, ```Skype```, ```Toll-Free```, ```Fax```, and ```Other```.
+**Required:** ```number``` ```location```
+Valid locations are: ```Work```, ```Home```, ```Mobile```, ```Skype```, ```Toll-Free```, ```Fax```, and ```Other```.
 
 ```json
 {

@@ -11,7 +11,7 @@
 
 ## Email
 
-*Note:* ```address``` is required.
+**Required:** ```address```
 
 ```json
 {

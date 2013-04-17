@@ -11,7 +11,8 @@
 
 ## Address
 
-*Note:* At least one field must be filled in to create an address. Valid locations are: ```Work```, ```Home```, and ```Other```.
+**Note:** At least one field must be filled in to create an address.
+Valid locations are: ```Work```, ```Home```, and ```Other```.
 
 ```json
 {

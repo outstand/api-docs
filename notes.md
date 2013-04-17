@@ -11,7 +11,7 @@
 
 ## Note
 
-*Note:* ```title``` is required.
+**Required:** ```title```
 
 ```json
 {

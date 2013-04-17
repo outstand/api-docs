@@ -11,7 +11,8 @@
 
 ## Web Address
 
-*Note:* ```url``` & ```url_type``` are required. Valid ```url_type``` are: ```Website```, ```LinkedIn```, ```Facebook```, ```Twitter```, ```Blog```, and ```YouTube```.
+**Required:** ```url``` ```url_type```
+Valid ```url_type``` are: ```Website```, ```LinkedIn```, ```Facebook```, ```Twitter```, ```Blog```, and ```YouTube```.
 
 ```json
 {

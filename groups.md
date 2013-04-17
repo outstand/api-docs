@@ -11,7 +11,7 @@
 
 ## Group
 
-*Note:* ```name``` is required.
+**Required:** ```name```
 
 ```json
 {
