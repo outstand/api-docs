@@ -47,11 +47,11 @@
 * ```/contacts.json``` returns all contacts for the account
 * ```/groups/:group_id/contacts.json``` returns all contacts for specified group
 
-Returns an array of contacts. See [Contact](contact) for JSON representation.
+Returns an array of contacts. See [Contact](#contact) for JSON representation.
 
 ## Get Contact
 
-* ```GET /contacts/:id.json``` returns specified contact (See [Contact](contact) for JSON representation)
+* ```GET /contacts/:id.json``` returns specified contact (See [Contact](#contact) for JSON representation)
 
 
 ## Create Contact
