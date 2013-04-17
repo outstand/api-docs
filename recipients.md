@@ -46,4 +46,4 @@ Returns an array of recipients. See [Recipient](#recipient) for JSON representat
 
 ## Get Recipient
 
-* ```GET /recipient/:id.json``` returns specified recipient (See [Recipient](#recipient) for JSON representation)
+* ```GET /recipients/:id.json``` returns specified recipient (See [Recipient](#recipient) for JSON representation)
