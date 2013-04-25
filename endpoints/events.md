@@ -65,6 +65,6 @@ On success, this returns ```200 OK``` and [JSON representation](#event) in respo
 
 ## Delete Event
 
-* ```DELETE /events/:id.json``` will delete the specified event and return ```204 No Content``` on success. If the user does not have permission to delete the event, it returns ```403 Forbidden```.
+* ```DELETE /events/:id.json``` will delete the specified event and return ```204 No Content``` on success. If the user does not have permission to delete the event, it returns ```404 Not Found```.
 
 

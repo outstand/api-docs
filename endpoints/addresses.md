@@ -75,6 +75,6 @@ On success, this returns ```200 OK``` and [JSON representation](#address) in res
 
 ## Delete Address
 
-* ```DELETE /addresses/:id.json``` will delete the specified address and return ```204 No Content``` on success. If the user does not have permission to delete the address, it returns ```403 Forbidden```.
+* ```DELETE /addresses/:id.json``` will delete the specified address and return ```204 No Content``` on success. If the user does not have permission to delete the address, it returns ```404 Not Found```.
 
 

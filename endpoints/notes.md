@@ -64,5 +64,5 @@ On success, this returns ```200 OK``` and [JSON representation](#note) in respon
 
 ## Delete Note
 
-* ```DELETE /notes/:id.json``` will delete the specified note and return ```204 No Content``` on success. If the user does not have permission to delete the note, it returns ```403 Forbidden```.
+* ```DELETE /notes/:id.json``` will delete the specified note and return ```204 No Content``` on success. If the user does not have permission to delete the note, it returns ```404 Not Found```.
 

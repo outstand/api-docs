@@ -83,4 +83,4 @@ On success, this returns ```200 OK``` and [JSON representation](#contact) in res
 
 ## Delete Contact
 
-* ```DELETE /contacts/:id.json``` will delete the specified contact and return ```204 No Content``` on success. If the user does not have permission to delete the contact, it returns ```403 Forbidden```.
+* ```DELETE /contacts/:id.json``` will delete the specified contact and return ```204 No Content``` on success. If the user does not have permission to delete the contact, it returns ```404 Not Found```.

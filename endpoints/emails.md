@@ -59,4 +59,4 @@ On success, this returns ```200 OK``` and [JSON representation](#email) in respo
 
 ## Delete Email
 
-* ```DELETE /emails/:id.json``` will delete the specified email and return ```204 No Content``` on success. If the user does not have permission to delete the email, it returns ```403 Forbidden```.
+* ```DELETE /emails/:id.json``` will delete the specified email and return ```204 No Content``` on success. If the user does not have permission to delete the email, it returns ```404 Not Found```.

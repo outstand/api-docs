@@ -63,6 +63,6 @@ On success, this returns ```200 OK``` and [JSON representation](#web-address) in
 
 ## Delete Web Address
 
-* ```DELETE /web_addresses/:id.json``` will delete the specified web address and return ```204 No Content``` on success. If the user does not have permission to delete the web address, it returns ```403 Forbidden```.
+* ```DELETE /web_addresses/:id.json``` will delete the specified web address and return ```204 No Content``` on success. If the user does not have permission to delete the web address, it returns ```404 Not Found```.
 
 
