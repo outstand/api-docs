@@ -1,8 +1,9 @@
 # Contacts
 
+* [Contact Attributes](#contact)
+
 ## Supported Actions
 
-* [Contact Attributes](#contact)
 * [Get Contacts](#get-contacts)
 * [Get Contact](#get-contact)
 * [Create Contact](#create-contact)
@@ -44,15 +45,17 @@
 
 ## Get Contacts
 
-* ```/contacts.json``` returns all contacts for the account
-* ```/groups/:group_id/contacts.json``` returns all contacts for specified group
+* ```GET /contacts.json``` returns all contacts for the account
+* ```GET /groups/:group_id/contacts.json``` returns all contacts for specified group
 
 Returns an array of contacts. See [Contact](#contact) for JSON representation.
+TODO: Add success and failure return codes.
 
 ## Get Contact
 
 * ```GET /contacts/:id.json``` returns specified contact (See [Contact](#contact) for JSON representation)
 
+TODO: Add success and failure return codes.
 
 ## Create Contact
 
