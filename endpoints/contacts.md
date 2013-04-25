@@ -66,7 +66,7 @@ Returns an array of contacts. See [Contact](#contact) for JSON representation.
 }
 ```
 
-On success, this returns ```201 Created```, [JSON representation](#contact) in response body, and ```Location``` header with the location of the new contact.
+On success, this returns ```201 Created```, [JSON representation](#contact) in response body, and ```Location``` header with the location of the new contact. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
 ## Update Contact
 
@@ -79,7 +79,7 @@ On success, this returns ```201 Created```, [JSON representation](#contact) in r
 }
 ```
 
-On success, this returns ```200 OK``` and [JSON representation](#contact) in response body. If the request is invalid, a ```422 Unprocessable Entity``` is returned with a response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
+On success, this returns ```200 OK``` and [JSON representation](#contact) in response body. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
 ## Delete Contact
 
