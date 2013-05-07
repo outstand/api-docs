@@ -1,12 +1,10 @@
-# Ace of Sales API Documentation
+# Ace of Sales API Documentation - Draft
 
-This is a REST-style API that uses JSON for serialization and [API token](#authentication) for authentication. You can only access our API over HTTPS.
+This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS.
 
 ## Authentication
 
-Every request must be made with an API token. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area.
-
-## Rate Limiting
+Every request must be made with the account's API token. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area.
 
 ## Endpoints
 
