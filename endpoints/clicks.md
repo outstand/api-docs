@@ -29,7 +29,7 @@
 
 ## Get Clicks
 
-* ```/orders/:order_id/clicks.json``` returns all clicks for specified order
+* ```GET /orders/:order_id/clicks.json``` returns all clicks for specified order
 
 Returns an array of clicks. See [Click](#click) for JSON representation.
 

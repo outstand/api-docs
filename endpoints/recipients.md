@@ -41,7 +41,7 @@
 
 ## Get Recipients
 
-* ```/orders/:order_id/recipients.json``` returns all recipients for specified order
+* ```GET /orders/:order_id/recipients.json``` returns all recipients for specified order
 
 Returns an array of recipients. See [Recipient](#recipient) for JSON representation.
 
