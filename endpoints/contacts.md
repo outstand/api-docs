@@ -38,8 +38,8 @@
   "questions_ideas_actions": "Lorem ipsum...",
   "favorites": "Lorem ipsum...",
   "friends_and_family": "Lorem ipsum...",
-  "created_at": 1366133271,
-  "updated_at": 1366133271
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z"
 }
 ```
 
@@ -48,14 +48,15 @@
 * ```GET /contacts.json``` returns all contacts for the account
 * ```GET /groups/:group_id/contacts.json``` returns all contacts for specified group
 
-Returns an array of contacts. See [Contact](#contact) for JSON representation.
-TODO: Add success and failure return codes.
+Returns a ```200 OK``` with an array of contacts. (See [Contact](#contact) for JSON representation.) If you request a page of contacts that does not exist, a ```404 Not Found``` will be returned.
+
+When specifying a group, if the group does not exist a ```404 Not Found``` will be returned.
 
 ## Get Contact
 
 * ```GET /contacts/:id.json``` returns specified contact (See [Contact](#contact) for JSON representation)
 
-TODO: Add success and failure return codes.
+Returns a ```200 OK``` on success and ```404 Not Found``` if contact does not exist.
 
 ## Create Contact
 

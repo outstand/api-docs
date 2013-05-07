@@ -17,12 +17,12 @@
 ```json
 {
   "id": 1,
-  "time": 1366133271,
+  "time": "2013-05-07T17:51:05Z",
   "category_name": "Birthday",
   "category_id" : 1,
   "details": "Lorem ipsum...",
-  "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z",
   "parent": "/contacts/:id.json" || "/groups/:id.json"
 }
 ```
@@ -45,7 +45,7 @@ Returns an array of events. (See [Event](#event) for JSON representation.)
 
 ```json
 {
-  "time": 1366133271,
+  "time": "2013-05-07T17:51:05Z",
   "category_name": "Follow-up"
 }
 ```
@@ -58,7 +58,7 @@ On success, this returns ```201 Created```, [JSON representation](#event) in res
 
 ```json
 {
-  "time": 1366133271,
+  "time": "2013-05-07T17:51:05Z",
   "details": "Lorem ipsum..."
 }
 ```

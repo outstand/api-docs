@@ -20,8 +20,8 @@
   "email": "john@aceofsales.com",
   "clicks": 0,
   "url": 0,
-  "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z",
   "parent": "/orders/:id.json",
   "recipient": "/recipients/:id.json"
 }

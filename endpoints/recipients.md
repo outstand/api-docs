@@ -28,12 +28,12 @@
   "bcc": false,
   "clicks": 0,
   "views": 0,
-  "viewed_at": 1366133271,
+  "viewed_at": "2013-05-07T17:51:05Z",
   "bounced": false,
-  "unsubscribed_at": 1366133271,
-  "sent_at": 1366133271,
-  "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "unsubscribed_at": "2013-05-07T17:51:05Z",
+  "sent_at": "2013-05-07T17:51:05Z",
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z",
   "parent": "/orders/:id.json",
   "contact": "/contacts/:id.json"
 }

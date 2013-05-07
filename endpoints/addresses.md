@@ -26,8 +26,8 @@ Valid locations are: ```Work```, ```Home```, and ```Other```.
   "postal_code": "24502",
   "country": "United States",
   "location": "Work",
-  "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z",
   "contact": "/contacts/:id.json"
 }
 ```

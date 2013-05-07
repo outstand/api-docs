@@ -19,8 +19,8 @@
   "id": 1,
   "name": "Group A",
   "contacts_count": 1,
-  "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z",
   "contacts": "/groups/:id/contacts.json"
 }
 ```

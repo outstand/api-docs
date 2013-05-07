@@ -14,8 +14,8 @@
 {
   "id": 1,
   "name": "Birthday",
-  "created_at": 1366133271,
-  "updated_at": 1366133271
+  "created_at": "2013-05-07T17:51:05Z",
+  "updated_at": "2013-05-07T17:51:05Z"
 }
 ```
 
