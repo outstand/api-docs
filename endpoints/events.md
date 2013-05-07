@@ -12,13 +12,14 @@
 
 ## Event
 
-**Required:** ```time``` ```category```
+**Required:** ```time```, ```category_name``` or ```category_id```
 
 ```json
 {
   "id": 1,
   "time": 1366133271,
-  "category": "Birthday",
+  "category_name": "Birthday",
+  "category_id" : 1,
   "details": "Lorem ipsum...",
   "created_at": 1366133271,
   "updated_at": 1366133271,
@@ -45,11 +46,11 @@ Returns an array of events. (See [Event](#event) for JSON representation.)
 ```json
 {
   "time": 1366133271,
-  "category": "Follow-up"
+  "category_name": "Follow-up"
 }
 ```
 
-On success, this returns ```201 Created```, [JSON representation](#event) in response body, and ```Location``` header with the location of the new event.
+On success, this returns ```201 Created```, [JSON representation](#event) in response body, and ```Location``` header with the location of the new event. If we are unable to find a category with the ```category_name``` or ```category_id``` a ```422 Unprocessable Entity``` is returned. If you send a ```category_id``` and ```category_name``` to create the event, the ```category_id``` takes precedence.
 
 ## Update Event
 
