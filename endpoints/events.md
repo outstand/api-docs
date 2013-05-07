@@ -1,8 +1,9 @@
 # Events
 
+* [Event](#event)
+
 ## Supported Actions
 
-* [Event](#event)
 * [Get Events](#get-events)
 * [Get Event](#get-event)
 * [Create Event](#create-event)

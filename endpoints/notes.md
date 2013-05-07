@@ -1,8 +1,9 @@
 # Notes
 
+* [Note](#note)
+
 ## Supported Actions
 
-* [Note](#note)
 * [Get Notes](#get-notes)
 * [Get Note](#get-note)
 * [Create Note](#create-note)

@@ -1,8 +1,9 @@
 # Contact Addresses
 
+* [Address](#address)
+
 ## Supported Actions
 
-* [Address](#address)
 * [Get Addresses](#get-addresses)
 * [Get Address](#get-address)
 * [Create Address](#create-address)

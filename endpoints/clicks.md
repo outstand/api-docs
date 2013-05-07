@@ -1,8 +1,9 @@
 # Clicks
 
+* [Click Attributes](#click)
+
 ## Supported Actions
 
-* [Click Attributes](#click)
 * [Get Clicks](#get-clicks)
 * [Get Click](#get-click)
 

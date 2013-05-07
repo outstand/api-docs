@@ -1,8 +1,9 @@
 # Contact Phone Numbers
 
+* [Phone](#phone)
+
 ## Supported Actions
 
-* [Phone](#phone)
 * [Get Phones](#get-phones)
 * [Get Phone](#get-phone)
 * [Create Phone](#create-phone)

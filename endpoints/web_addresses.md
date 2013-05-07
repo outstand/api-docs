@@ -1,8 +1,9 @@
 # Contact Web Addresses
 
+* [Web Address](#web-address)
+
 ## Supported Actions
 
-* [Web Address](#web-address)
 * [Get Web Addresses](#get-web-addresses)
 * [Get Web Address](#get-web-address)
 * [Create Web Address](#create-web-address)

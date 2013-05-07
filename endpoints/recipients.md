@@ -1,8 +1,9 @@
 # Recipients
 
+* [Recipient Attributes](#recipient)
+
 ## Supported Actions
 
-* [Recipient Attributes](#recipient)
 * [Get Recipients](#get-recipients)
 * [Get Recipient](#get-recipient)
 

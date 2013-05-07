@@ -1,8 +1,9 @@
 # Groups
 
+* [Group Attributes](#group)
+
 ## Supported Actions
 
-* [Group Attributes](#group)
 * [Get Groups](#get-groups)
 * [Get Group](#get-group)
 * [Create Group](#create-group)

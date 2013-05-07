@@ -1,8 +1,9 @@
 # Contact Email Addresses
 
+* [Email](#email)
+
 ## Supported Actions
 
-* [Email](#email)
 * [Get Emails](#get-emails)
 * [Get Email](#get-email)
 * [Create Email](#create-email)
