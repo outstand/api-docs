@@ -15,7 +15,7 @@
   "id": 1,
   "name": "Birthday",
   "created_at": 1366133271,
-  "updated_at": 1366133271,
+  "updated_at": 1366133271
 }
 ```
 
@@ -23,5 +23,5 @@
 
 * ```GET /event_categories.json``` returns all event categories available to the account
 
-Returns an array of event categories. (See [Event Category](#event-category) for JSON representation.)
+Returns a ```200 OK``` with an array of event categories. (See [Event Category](#event-category) for JSON representation.)
 
