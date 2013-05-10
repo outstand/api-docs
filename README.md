@@ -19,5 +19,6 @@ Every request must be made with the account's API token. Your account's API toke
   * [Clicks](https://github.com/aceofsales/api-docs/blob/master/endpoints/clicks.md)
 * [Notes](https://github.com/aceofsales/api-docs/blob/master/endpoints/notes.md)
 * [Events](https://github.com/aceofsales/api-docs/blob/master/endpoints/events.md)
+* [Event Categories](https://github.com/aceofsales/api-docs/blob/master/endpoints/event_categories.md)
 
 
