@@ -17,6 +17,7 @@
 ```json
 {
   "id": 1,
+  "full_name": "John J. Smith",
   "first_name": "John",
   "middle_initial": "J",
   "last_name": "Smith",

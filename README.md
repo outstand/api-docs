@@ -1,4 +1,4 @@
-# Ace of Sales API Documentation - Draft
+# Ace of Sales API Documentation
 
 This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS.
 

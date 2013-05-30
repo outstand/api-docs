@@ -22,7 +22,7 @@ Valid locations are: ```Work```, ```Home```, and ```Other```.
   "address_line_1": "110 Northwynd Circle",
   "address_line_2": "Suite B",
   "city": "Lynchburg",
-  "region": "Va",
+  "state_region_province": "Va",
   "postal_code": "24502",
   "country": "United States",
   "location": "Work",
