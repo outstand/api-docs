@@ -19,7 +19,7 @@
   "company_name": "Ace of Sales",
   "email": "john@aceofsales.com",
   "clicks": 0,
-  "url": 0,
+  "url": "http://example.com",
   "created_at": "2013-05-07T17:51:05Z",
   "updated_at": "2013-05-07T17:51:05Z",
   "parent": "/orders/:id.json",
