@@ -8,6 +8,12 @@ Every request must be made with the account's API token. Your account's API toke
 
 ## Endpoints
 
+The current version of the API is v1. This is reflected in the URL used to access the endpoint. For example, to access the contacts endpoint you would use the following:
+
+```
+/api/v1/contacts.json
+```
+
 * [Contacts](https://github.com/aceofsales/api-docs/blob/master/endpoints/contacts.md)
   * [Addresses](https://github.com/aceofsales/api-docs/blob/master/endpoints/addresses.md)
   * [Emails](https://github.com/aceofsales/api-docs/blob/master/endpoints/emails.md)
