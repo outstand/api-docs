@@ -4,7 +4,7 @@ This is a REST-style API that uses JSON for serialization and [API token](#authe
 
 ## Authentication
 
-Every request must be made with the account's API token. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
+Every request must be made with the account's API token in the parameters of the request. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
 
 ```
 /api/v1/contacts.json?auth_token=th3t0k3ng035r1ghth3r3
