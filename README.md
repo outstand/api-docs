@@ -33,3 +33,14 @@ The current version of the API is v1. This is reflected in the URL used to acces
 * [Event Categories](https://github.com/aceofsales/api-docs/blob/master/endpoints/event_categories.md)
 
 
+## Pagination
+
+You can paginate the result set by passing in the following parameters for the request:
+
+```
+/api/v1/contacts.json?page=1&per_page=50
+```
+
+When you request a page that does not exist you will receive a ```404 Not Found```.
+
+*Note:* ```page``` defaults to 1 and ```per_page``` defaults to the maximum of 100.
