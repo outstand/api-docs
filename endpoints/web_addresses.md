@@ -60,7 +60,7 @@ On success, this returns ```201 Created```, [JSON representation](#web-address) 
 }
 ```
 
-On success, this returns ```200 OK``` and [JSON representation](#web-address) in response body.
+On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
 ## Delete Web Address
 
