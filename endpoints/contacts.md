@@ -84,6 +84,16 @@ On success, this returns ```201 Created```, [JSON representation](#contact) in r
 }
 ```
 
+To update the primaries (email, mailing address, and phone number) for the contact use the following: (where 1 is the id of the email, mailing address or phone number)
+
+```json
+{
+  primary_email_id: 1,
+  primary_address_id: 1,
+  primary_phone_id: 1
+}
+```
+
 On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
 ## Delete Contact
