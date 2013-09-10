@@ -88,9 +88,9 @@ To update the primaries (email, mailing address, and phone number) for the conta
 
 ```json
 {
-  primary_email_id: 1,
-  primary_address_id: 1,
-  primary_phone_id: 1
+  "primary_email_id" : 1,
+  "primary_address_id" : 1,
+  "primary_phone_id" : 1
 }
 ```
 
