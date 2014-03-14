@@ -95,8 +95,8 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
   }],
   "addresses": [{
     "location": "Work",
-    "address_line_1": "57 S. Main St, Suite 302",
-    "address_line_2": None,
+    "address_line_1": "Suite 302",
+    "address_line_2": "57 S. Main St",
     "city": "Harrisonburg",
     "state_region_province": "VA",
     "postal_code": "22801",
