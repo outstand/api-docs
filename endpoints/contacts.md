@@ -73,6 +73,38 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if contact does not ex
 
 On success, this returns ```201 Created```, [JSON representation](#contact) in response body, and ```Location``` header with the location of the new contact. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
+You can create a contact, email, phone, and address in one step.  Here's an example POST body:
+
+```json
+{
+  "first_name": "Myers",
+  "last_name": "Carpenter",
+  "company_name": "Trouble, Inc.",
+  "title": "Chief Troublemaker",
+  "emails": [
+    {
+      "address": "john@aceofsales.com",
+    },
+    {
+      "address": "notjohn@aceofsales.com",
+    }
+  ],
+  "phones": [{
+    "number": "555 555 1212",
+    "location": "Work",
+  }],
+  "addresses": [{
+    "location": "Work",
+    "address_line_1": "Suite 302",
+    "address_line_2": "57 S. Main St",
+    "city": "Harrisonburg",
+    "state_region_province": "VA",
+    "postal_code": "22801",
+    "country": "United States"
+  }]
+}
+```
+
 ## Update Contact
 
 * ```PUT /contacts/:id.json``` updates contact from parameters
