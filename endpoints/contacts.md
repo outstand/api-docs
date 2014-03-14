@@ -73,7 +73,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if contact does not ex
 
 On success, this returns ```201 Created```, [JSON representation](#contact) in response body, and ```Location``` header with the location of the new contact. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
 
-You can create a contact, email, phone, and address in one step.  Here's an example POST body
+You can create a contact, email, phone, and address in one step.  Here's an example POST body:
 
 ```json
 {
