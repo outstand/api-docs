@@ -77,21 +77,21 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 
 ```json
 {
-  "first_name": "Myers",
-  "last_name": "Carpenter",
+  "first_name": "John",
+  "last_name": "Smith",
   "company_name": "Trouble, Inc.",
   "title": "Chief Troublemaker",
   "emails": [
     {
-      "address": "john@aceofsales.com",
+      "address": "john@aceofsales.com"
     },
     {
-      "address": "notjohn@aceofsales.com",
+      "address": "notjohn@aceofsales.com"
     }
   ],
   "phones": [{
     "number": "555 555 1212",
-    "location": "Work",
+    "location": "Work"
   }],
   "addresses": [{
     "location": "Work",
