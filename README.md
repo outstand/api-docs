@@ -1,13 +1,13 @@
 # Ace of Sales API Documentation
 
-This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS.
+This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS at https://app.aceofsales.com.
 
 ## Authentication
 
 Every request must be made with the account's API token in the parameters of the request. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
 
 ```
-/api/v1/contacts.json?auth_token=th3t0k3ng035r1ghth3r3
+https://app.aceofsales.com/api/v1/contacts.json?auth_token=th3t0k3ng035r1ghth3r3
 ```
 
 ## Endpoints
