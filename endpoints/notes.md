@@ -61,7 +61,7 @@ On success, this returns ```201 Created```, [JSON representation](#note) in resp
 }
 ```
 
-On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/aceofsales/api-docs/blob/master/422.md))
+On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/outstand/api-docs/blob/master/422.md))
 
 ## Delete Note
 
