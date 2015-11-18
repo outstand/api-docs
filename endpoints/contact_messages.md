@@ -20,7 +20,7 @@
   "opened_at": "2015-11-12T21:24:30Z",
   "opens": 1,
   "clicks": 1,
-  "bounce_code": '100',
+  "bounce_code": "100",
   "unsubscribed_at": "2015-11-12T21:21:33Z",
   "spam_report_at": "2015-11-12T21:21:33Z"
 }

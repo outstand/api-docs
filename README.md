@@ -23,7 +23,7 @@ The current version of the API is v1. This is reflected in the URL used to acces
   * [Addresses](https://github.com/outstand/api-docs/blob/master/endpoints/addresses.md)
   * [Emails](https://github.com/outstand/api-docs/blob/master/endpoints/emails.md)
   * [Phones](https://github.com/outstand/api-docs/blob/master/endpoints/phones.md)
-  * [Messages](https://github.com/outstand/api-docs/blob/master/endpoints/messages.md)
+  * [Messages](https://github.com/outstand/api-docs/blob/master/endpoints/contact_messages.md)
   * [Web Addresses](https://github.com/outstand/api-docs/blob/master/endpoints/web_addresses.md)
 * [Groups](https://github.com/outstand/api-docs/blob/master/endpoints/groups.md)
 * [Orders](https://github.com/outstand/api-docs/blob/master/endpoints/orders.md)
