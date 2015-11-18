@@ -35,6 +35,7 @@ The current version of the API is v1. This is reflected in the URL used to acces
 * [Profiles](https://github.com/outstand/api-docs/blog/master/endpoints/profiles.md)
 * [Saved Messages](https://github.com/outstand/api-docs/blog/master/endpoints/saved_messages.md)
 * [Quick Messages](https://github.com/outstand/api-docs/blog/master/endpoints/quick_messages.md)
+* [Templates](https://github.com/outstand/api-docs/blog/master/endpoints/templates.md)
 
 
 ## Pagination
