@@ -40,7 +40,7 @@ Returns a `200 OK` with an array of contacts. (See [Saved Message](#saved-messag
 * `template` supports the slug of the template: `branded-email`, `email-greeting`, `newsletter-single-column`, `newsletter-two-column`, `greeting-card`, `mini-greeting-card`, `postcard`, `mini-postcard` (`email-greeting` is default.)
 * `q` search query
 * `category`
-* `filter_by` supports one of the following: `all`, `mine`, `buy`. (`all` is default.) `mine` filters saved messages to only saved messages that the user created, belong to the user's white label group, or the user has purchased.
+* `filter_by` supports one of the following: `all`, `mine`, `buy`. (`all` is default.) `mine` filters saved messages to only saved messages that the user created, belong to the user's white label group, or the user has purchased. `buy` filters saved messages to only the saved messages that the user can purchase.
 * `sort_by` supports one of the following: `created_at`, `name` (`created_at` is default.)
 * `direction` supports one of the following: `desc`, `asc` (`desc` is default.)
 
