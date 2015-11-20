@@ -46,7 +46,7 @@ You'll receive a `200 OK` with the following response body:
 ```json
 {
   "access_token": "...",
-  "token_type": "",
+  "token_type": "bearer",
   "expires_in": 7200,
   "refresh_token": "...",
   "created_at": 1447820578
