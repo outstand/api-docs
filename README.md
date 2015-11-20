@@ -9,7 +9,7 @@ This is a REST-style API that uses JSON for serialization and [API token](#authe
 This is our preferred way of allowing users to grant access to their accounts from third party applications. This way our users have complete control over access to their data without giving out their password.
 
 1. [Grab an OAuth 2 library](http://oauth.net/code/)
-2. Contact support to register your application and provide us with a `redirect_uri`. You will then be assigned a `client_id` and `client_secret`. (The `redirect_uri` is where we will send the verification code.)
+2. Contact support to register your application and provide us with a `redirect_uri`. You will then be assigned a `client_id` and `client_secret`. (The `redirect_uri` is where we will send the verification code. e.g. `https://example.com/auth/outstand/callback`)
 3. Configure your OAuth 2 library with:
   * `client_id`, `client_secret`, and `redirect_uri`
   * `https://app.outstand.com/oauth/authorize` to request authorization
@@ -22,7 +22,7 @@ If you are **not** using a library, you will need to request access:
 https://app.outstand.com/oauth/authorize?client_id=[client_id]&redirect_uri=[redirect_uri]&response_type=code
 ```
 
-We will then authenticate the user, ask them to authorize your application, and redirect the user back to your application with an authorization code. (This authorization code is good for 5 minutes.)
+We will then authenticate the user, ask them to authorize your application, and redirect the user back to your application with an authorization code. (This authorization code is good for 10 minutes.)
 
 Your application must then make a request to trade your authorization code for an access token:
 
@@ -59,6 +59,25 @@ Your application will then use the `access_token` with your API requests by sett
 Authorization: Bearer ACCESS_TOKEN
 ```
 
+Access tokens are valid for 2 hours. Once the access token has expired, use the refresh token to get a new access token. To refresh the access token:
+
+```
+POST https://app.outstand.com/oauth/token
+```
+
+with body:
+
+```json
+{
+  "client_id": [client_id],
+  "client_secret": [client_secret],
+  "code": [refresh token],
+  "grant_type": "refresh_token",
+  "redirect_uri": "https://example.com/auth/outstand/callback"
+}
+```
+
+You'll receive a `200 OK` with a new `access_token` and `refresh_token` in the response body.
 
 ### Token Authentication (Deprecated)
 
