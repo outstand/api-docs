@@ -23,6 +23,7 @@ The current version of the API is v1. This is reflected in the URL used to acces
   * [Addresses](https://github.com/outstand/api-docs/blob/master/endpoints/addresses.md)
   * [Emails](https://github.com/outstand/api-docs/blob/master/endpoints/emails.md)
   * [Phones](https://github.com/outstand/api-docs/blob/master/endpoints/phones.md)
+  * [Messages](https://github.com/outstand/api-docs/blob/master/endpoints/contact_messages.md)
   * [Web Addresses](https://github.com/outstand/api-docs/blob/master/endpoints/web_addresses.md)
 * [Groups](https://github.com/outstand/api-docs/blob/master/endpoints/groups.md)
 * [Orders](https://github.com/outstand/api-docs/blob/master/endpoints/orders.md)
@@ -31,6 +32,10 @@ The current version of the API is v1. This is reflected in the URL used to acces
 * [Notes](https://github.com/outstand/api-docs/blob/master/endpoints/notes.md)
 * [Events](https://github.com/outstand/api-docs/blob/master/endpoints/events.md)
 * [Event Categories](https://github.com/outstand/api-docs/blob/master/endpoints/event_categories.md)
+* [Profiles](https://github.com/outstand/api-docs/blog/master/endpoints/profiles.md)
+* [Saved Messages](https://github.com/outstand/api-docs/blog/master/endpoints/saved_messages.md)
+* [Quick Messages](https://github.com/outstand/api-docs/blog/master/endpoints/quick_messages.md)
+* [Templates](https://github.com/outstand/api-docs/blog/master/endpoints/templates.md)
 
 
 ## Pagination
