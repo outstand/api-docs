@@ -71,9 +71,8 @@ with body:
 {
   "client_id": [client_id],
   "client_secret": [client_secret],
-  "code": [refresh token],
-  "grant_type": "refresh_token",
-  "redirect_uri": "https://example.com/auth/outstand/callback"
+  "refresh_token": [refresh token],
+  "grant_type": "refresh_token"
 }
 ```
 
