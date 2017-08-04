@@ -108,10 +108,10 @@ The current version of the API is v1. This is reflected in the URL used to acces
 * [Notes](https://github.com/outstand/api-docs/blob/master/endpoints/notes.md)
 * [Events](https://github.com/outstand/api-docs/blob/master/endpoints/events.md)
 * [Event Categories](https://github.com/outstand/api-docs/blob/master/endpoints/event_categories.md)
-* [Profiles](https://github.com/outstand/api-docs/blog/master/endpoints/profiles.md)
-* [Saved Messages](https://github.com/outstand/api-docs/blog/master/endpoints/saved_messages.md)
-* [Quick Messages](https://github.com/outstand/api-docs/blog/master/endpoints/quick_messages.md)
-* [Templates](https://github.com/outstand/api-docs/blog/master/endpoints/templates.md)
+* [Profiles](https://github.com/outstand/api-docs/blob/master/endpoints/profiles.md)
+* [Saved Messages](https://github.com/outstand/api-docs/blob/master/endpoints/saved_messages.md)
+* [Quick Messages](https://github.com/outstand/api-docs/blob/master/endpoints/quick_messages.md)
+* [Templates](https://github.com/outstand/api-docs/blob/master/endpoints/templates.md)
 
 
 ## Pagination
