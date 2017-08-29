@@ -125,3 +125,7 @@ You can paginate the result set by passing in the following parameters for the r
 When you request a page that does not exist you will receive a ```404 Not Found```.
 
 *Note:* ```page``` defaults to 1 and ```per_page``` defaults to the maximum of 100.
+
+## User Endpoints
+
+Outstand clients with their own white label can gain access to our [User endpoints](https://github.com/outstand/api-docs/blob/master/user_endpoints.md).
