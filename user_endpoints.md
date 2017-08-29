@@ -5,7 +5,7 @@ _Note: This API is scoped to your organization’s white label._
 
 **User Attributes:**
 
-```json
+```javascript
 {
   “username”: “user12345”,
   “email”: “joe.smith@example.com”,
@@ -28,7 +28,7 @@ Returns a 200 OK with an array of users. If you request a page of users that doe
 
 Parameters:
 
-```json
+```javascript
 {
   “username”: “user12345”,
   “password”: “test123”,
