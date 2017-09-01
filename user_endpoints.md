@@ -21,7 +21,7 @@ When provisioning a user that requires payment information, the user will be cre
 ## Get Users
 `GET /api/v1/users.json` - Returns all users available to the Third Party Service
 
-Returns a 200 OK with an array of users. If you request a page of users that does not exist, a 400 Bad Request will be returned.
+Returns a 200 OK with a [paginated](https://github.com/outstand/api-docs#pagination) array of users. If you request a page of users that does not exist, a 400 Bad Request will be returned.
 
 ## Create User
 `POST /api/v1/white_labels/<token>/users` - Creates a user account under your white label
