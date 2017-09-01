@@ -71,3 +71,78 @@ On success, this returns 201 Created, the user attributes in the response body, 
 `GET /api/v1/users/:username.json` - Returns the user attributes of user with specified username.
 
 Returns a 200 OK on success and 404 Not Found if user does not exist.
+
+## Webhooks
+
+We provide webhook events for integrators.  Contact us with your target URL for setup.
+
+Webhooks are asynchronous events and as such may arrive after a delay.  Also keep in mind that webhooks may arrive out of order.
+When you receive a webhook, you should reply with a `200 OK` response as quickly as possible.  Any other response or a failure to respond within 15 seconds will result in a failed delivery and automatic retries.  Outstand will attempt to send each webhook up to 5 times before permanently failing the webhook delivery.  The retries will follow a backoff schedule:
+
+Attempt | Timing
+--------|-------
+1 | As soon as possible after the trigger
+2 | 10 seconds after the most recent failure
+3 | 15 seconds after the most recent failure
+4 | 90 seconds after the most recent failure
+5 | 180 seconds after the most recent failure
+
+Webhooks are signed with a signature which is the HMAC hexdigest of the webhook body and the shared secret that we supply.  The digest used is indicated by the beginning of the signature.  You may validate a webhook with something similar to the following ruby code:
+```ruby
+def valid_signature?(headers, body)
+  digest = headers['X-Outstand-Signature'].split('=').first
+  raise 'Invalid digest' unless ['sha256', 'sha512'].include? digest
+  signature = "#{digest}=" + OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new(digest), ENV['SECRET_TOKEN'], body)
+  Rack::Utils.secure_compare(signature, headers['X-Outstand-Signature'])
+end
+```
+_Note: Be sure to use a constant time comparison method like `secure_compare`_
+
+### Events
+
+Name | Description
+-----|------------
+user_status | Triggered when a user's status changes.
+
+### Payloads
+
+Each event type has a specific payload that is included in the webhook body.
+
+#### Headers
+
+Header | Description
+-------|------------
+`X-Outstand-Event` | Name of the event that triggered this webhook
+`X-Outstand-Id` | Unique ID for this webhook event
+`X-Outstand-Signature` | HMAC hexdigest of the body with the secret key
+
+#### Example
+```
+POST /payload HTTP/1.1
+
+Host: yourserver.com:443
+User-Agent: Outstand-Webhook
+Content-Type: application/json
+Content-Length: <length>
+X-Outstand-Event: user_status
+X-Outstand-Id: 123
+X-Outstand-Signature: sha256=<signature>
+
+{
+  "username": "user12345",
+  "status": "active"
+}
+```
+
+### Detailed Events
+
+#### `user_status`
+
+Triggered when a user's status changes.
+
+Payload:
+
+Key | Type | Description
+----|------|------------
+`username` | `string` | The unique username of the user.
+`status` | `string` | The user's status.
