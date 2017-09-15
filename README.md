@@ -80,18 +80,26 @@ You'll receive a `200 OK` with a new `access_token` and `refresh_token` in the r
 
 ### Token Authentication (Deprecated)
 
-Every request must be made with the account's API token in the parameters of the request. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
+Every request must be made with the account's API token in the headers of the request. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
 
 ```
-https://app.outstand.com/api/v1/contacts.json?auth_token=th3t0k3ng035r1ghth3r3
+GET /api/v1/contacts.json HTTP/1.1
+
+Host: app.outstand.com
+<Other standard headers here>
+Authorization: th3t0k3ng035r1ghth3r3
+From: usernamegoeshere
+
 ```
+
+Note: The `From` header can be the user's username or url encoded email address.
 
 ## Endpoints
 
 The current version of the API is v1. This is reflected in the URL used to access the endpoint. For example, to access the contacts endpoint you would use the following:
 
 ```
-/api/v1/contacts.json?auth_token=th3t0k3ng035r1ghth3r3
+/api/v1/contacts.json
 ```
 
 
