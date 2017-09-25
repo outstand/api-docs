@@ -1,6 +1,14 @@
 # Outstand API Documentation
 
-This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS at https://app.outstand.com.
+This is a REST-style API that uses JSON for serialization and [API token](#authentication) authentication. You can only access our API over HTTPS at https://app.outstand.com or your white label URL if you're a corporate customer.
+
+Our API endpoints are broken up into two categories: application level and user level.  Application level endpoints are used by corporate white label customers to manage their white label. User level endpoints are used by both white labels and end users to manage an individual user.
+
+*If you're a normal user, you can just ignore the application level endpoints.*
+
+## Application Level Endpoints
+
+Outstand clients with their own white label can gain access to our [User endpoints](https://github.com/outstand/api-docs/blob/master/user_endpoints.md).
 
 ## Authentication
 
@@ -133,7 +141,3 @@ You can paginate the result set by passing in the following parameters for the r
 When you request a page that does not exist you will receive a ```404 Not Found```.
 
 *Note:* ```page``` defaults to 1 and ```per_page``` defaults to the maximum of 100.
-
-## User Endpoints
-
-Outstand clients with their own white label can gain access to our [User endpoints](https://github.com/outstand/api-docs/blob/master/user_endpoints.md).
