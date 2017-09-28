@@ -8,7 +8,7 @@ Our API endpoints are broken up into two categories: application level and user 
 
 ## Application Level Endpoints
 
-Outstand clients with their own white label can gain access to our [User endpoints](https://github.com/outstand/api-docs/blob/master/user_endpoints.md).
+Outstand clients with their own white label can gain access to our [Application endpoints](https://github.com/outstand/api-docs/blob/master/application_endpoints.md).
 
 ## Authentication
 

@@ -1,4 +1,4 @@
-# User Endpoints
+# Application Endpoints
 
 ## Authentication
 
@@ -7,7 +7,7 @@ The following endpoints are only available through OAuth2 Client Credentials Flo
 The endpoints described here are considered 'application level endpoints' which is why the oauth tokens you obtain through the client credentials flow aren't tied to a user.  These tokens _cannot_ be used to access 'user level endpoints' and regular user oauth tokens cannot be used to access these application level endpoints.
 
 
-## Introduction
+## User Endpoints
 
 _Note: This API is scoped to your organization’s white label._
 
