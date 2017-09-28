@@ -1,5 +1,13 @@
-# User Endpoints
+# Application Endpoints
+
+## Authentication
+
 The following endpoints are only available through OAuth2 Client Credentials Flow with an application with the `provision_users` scope.
+
+The endpoints described here are considered 'application level endpoints' which is why the oauth tokens you obtain through the client credentials flow aren't tied to a user.  These tokens _cannot_ be used to access 'user level endpoints' and regular user oauth tokens cannot be used to access these application level endpoints.
+
+
+## User Endpoints
 
 _Note: This API is scoped to your organization’s white label._
 
@@ -120,7 +128,7 @@ Header | Description
 ```
 POST /payload HTTP/1.1
 
-Host: yourserver.com:443
+Host: yourserver.com
 User-Agent: Outstand-Webhook
 Content-Type: application/json
 Content-Length: <length>
