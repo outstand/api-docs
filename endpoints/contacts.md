@@ -112,7 +112,7 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 Contacts have four different related types: phones, emails, addresses, and web_addresses.  Additionally, phones, emails, and addresses can have primaries set.
 The update contact endpoint supports two modes of operation with regards to those related types: normal and replace. In normal mode, you can add and update existing related types. You can use replace mode to overwrite or delete existing data.
 
-You can invoke normal mode by sending the header `X-Outstand-Replace: true`.  Any other value (or the header's absence) will result in normal mode.
+You can invoke replace mode by sending the header `X-Outstand-Replace: true`.  Any other value (or the header's absence) will result in normal mode.
 
 #### Example
 
@@ -177,7 +177,7 @@ In replace mode the following would happen:
 - A new address would be added with the above attributes
 - Web address id `30` would be retained
 
-If a related type that is also a primary is deleted (example: phone id `1` is also the primary_phone_id) then the primary is set to `nil` except in cases where there is only one other record which is promoted to primary (example: we have a second phone number already).
+If a related type that is also a primary is deleted (example: phone id `1` is also the primary_phone_id) then the primary is set to `nil` except in cases where there is only one other record which is then promoted to primary (example: we have a second phone number already).
 
 
 #### Setting Primaries
