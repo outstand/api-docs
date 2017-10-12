@@ -109,12 +109,78 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 
 * ```PUT /contacts/:id.json``` updates contact from parameters
 
+Contacts have four different related types: phones, emails, addresses, and web_addresses.  Additionally, phones, emails, and addresses can have primaries set.
+The update contact endpoint supports two modes of operation with regards to those related types: normal and replace. In normal mode, you can add and update existing related types. You can use replace mode to overwrite or delete existing data.
+
+You can invoke normal mode by sending the header `X-Outstand-Replace: true`.  Any other value (or the header's absence) will result in normal mode.
+
+#### Example
+
+Let's assume this contact already has a phone with id `1`, an email with id `10`, an address with id `20`, and a web address with id `30`.  Now let's assume we receive the following update.
+
 ```json
 {
   "first_name" : "Jack",
-  "middle_initial" : "J"
+  "middle_initial" : "J",
+  "phones": [
+    {
+      "id": 1
+    },
+    {
+      "number": "555 555 1212",
+      "location": "Work"
+    }
+  ],
+  "emails": [
+    {
+      "id": 10,
+      "address": "bob@example.com"
+    },
+    {
+      "address": "john@example.com"
+    }
+  ],
+  "addresses": [
+    {
+      "location": "Work",
+      "address_line_1": "Suite 302",
+      "address_line_2": "57 S. Main St",
+      "city": "Harrisonburg",
+      "state_region_province": "VA",
+      "postal_code": "22801",
+      "country": "United States"
+    }
+  ],
+  "web_addresses": [
+    {
+      "id": 30
+    }
+  ]
 }
 ```
+
+In normal mode the following would happen:
+- Phone id `1` would be ignored
+- A new phone would be added with the number '555 555 1212'
+- Email id `10` would have its address updated
+- A new email would be added with the address `john@example.com`
+- Address id `20` is not included in the payload and would remain
+- A new address would be added with the above attributes
+- Web address id `30` would be ignored
+
+In replace mode the following would happen:
+- Phone id `1` would be retained
+- A new phone would be added with the number '555 555 1212'
+- Email id `10` would have its address updated
+- A new email would be added with the address `john@example.com`
+- Address id `20` is not included in the payload and would be deleted
+- A new address would be added with the above attributes
+- Web address id `30` would be retained
+
+If a related type that is also a primary is deleted (example: phone id `1` is also the primary_phone_id) then the primary is set to `nil` except in cases where there is only one other record which is promoted to primary (example: we have a second phone number already).
+
+
+#### Setting Primaries
 
 To update the primaries (email, mailing address, and phone number) for the contact use the following: (where 1 is the id of the email, mailing address or phone number)
 
@@ -126,7 +192,9 @@ To update the primaries (email, mailing address, and phone number) for the conta
 }
 ```
 
-On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/outstand/api-docs/blob/master/422.md))
+#### Response
+
+On success, this returns ```200 OK``` with the updated contact returned in the response body. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/outstand/api-docs/blob/master/422.md))
 
 ## Delete Contact
 
