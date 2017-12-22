@@ -34,10 +34,10 @@ the group they will automatically receive the specified Saved Message and/or Cam
 `profile_id` is not specified, the automated messages will be sent with the user's default profile
 that owns the group.
 
-If the user that owns the group does not have access to the Saved Message or
-Campaign Template referenced, you will not be able to add it to the group; resulting in a 422
-response. If the user loses access to the Saved Message and/or Campaign Template that is bound to
-a group, the automation for that group will result in a no-op.
+If the user that owns the group does not have access to the Saved Message, Campaign Template, or Profile
+referenced, you will not be able to add it to the group; resulting in a 422 response. If the user
+loses access to the Saved Message and/or Campaign Template that is bound to a group, the automation
+for that group will result in a no-op.
 
 
 ## Get Groups
