@@ -80,7 +80,7 @@ You'll receive a `200 OK` with a new `access_token` and `refresh_token` in the r
 
 ### Token Authentication
 
-Every request must be made with the account's API token in the `Authorization` header of the request along with a `From` header containing the email address for the account. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
+Every request must be made with the account's API token in the `Authorization` header of the request along with a `From` header containing the email address or username for the account. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
 
 ```
 https://app.outstand.com/api/v1/contacts.json
