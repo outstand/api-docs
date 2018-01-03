@@ -72,7 +72,7 @@ On success, this returns ```201 Created```, [JSON representation](#group) in res
 
 ```json
 {
-  "name" : "Group A"
+  "name" : "Group A",
   "saved_message_id" : "abcdefg",
   "campaign_template_id" : 1,
   "profile_id" : 1
