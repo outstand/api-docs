@@ -49,7 +49,7 @@ Returns a `200 OK` with an array of groups. (See [Group](#group) for JSON repres
 
 ### Optional Query Params
 
-* `q` search query
+* `q` full-text search on `name`
 * `page` & `per_page` see [Pagination](https://github.com/outstand/api-docs#pagination)
 
 ## Get Group

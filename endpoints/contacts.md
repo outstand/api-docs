@@ -30,7 +30,7 @@
     "address_line_1": "110 Northwynd Circle",
     "address_line_2": "Suite B",
     "city": "Lynchburg",
-    "region": "Va",
+    "state_region_province": "Va",
     "postal_code": "24502",
     "country": "United States"
   },
@@ -55,7 +55,7 @@ When specifying a group, if the group does not exist a ```404 Not Found``` will 
 
 ### Optional Query Params
 
-* `q` search query
+* `q` full-text search across: `first_name`, `last_name`, `company_name`, `title`, `primary_email`, `primary_address.city`, `primary_address.state_region_province`, `primary_address.postal_code`, `primary_phone`
 * `page` & `per_page` see [Pagination](https://github.com/outstand/api-docs#pagination)
 * `sort_by` supports the following values: `created_at`, `company_name`, `title`, `first_name`, `last_name`, `primary_email_address`. Default: `last_name`
 * `direction` supports the following values: `asc`, `desc`. Default: `asc`
