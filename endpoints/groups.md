@@ -42,10 +42,15 @@ for that group will result in a no-op.
 
 ## Get Groups
 
-* ```GET /groups.json``` returns all groups for account.
-* ```GET /contacts/:contact_id/groups.json``` returns all groups for specified contact.
+* ```GET /groups.json``` returns a paginated list of groups for account.
+* ```GET /contacts/:contact_id/groups.json``` returns a paginated list of groups for specified contact for account.
 
-Returns an array of groups. (See [Group](#group) for JSON representation.)
+Returns a `200 OK` with an array of groups. (See [Group](#group) for JSON representation.) If you request a page of groups that does not exist, a ```404 Not Found``` will be returned. (See [Pagination](https://github.com/outstand/api-docs#pagination))
+
+### Optional Query Params
+
+* `q` search query
+* `page` & `per_page` see [Pagination](https://github.com/outstand/api-docs#pagination)
 
 ## Get Group
 
