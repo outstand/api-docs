@@ -80,6 +80,11 @@ On success, this returns 201 Created, the user attributes in the response body, 
 
 Returns a 200 OK on success and 404 Not Found if user does not exist.
 
+## Delete User
+`DELETE /api/v1/users/:username.json` - Terminates the given user's account. The user's account will be maintained in a deleted state for up to 30 days.
+
+Returns a 204 No Content on success and a 404 Not Found if the user does not exist.
+
 ## Webhooks
 
 We provide webhook events for integrators.  Contact us with your target URL for setup.
