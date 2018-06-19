@@ -86,11 +86,11 @@ Returns a 200 OK on success and 404 Not Found if user does not exist.
 Parameters:
 ```json
 {
-  "status": "disabled"
+  "status": "disabled" | "active"
 }
 ```
 
-_Note: At this time, this endpoint can only be used to disable accounts._
+_Note: At this time, this endpoint can only be used to disable & activate accounts._
 
 Returns 204 No Content on success. If an invalid status is requested, a 400 Bad Request will be returned. If the user cannot be updated for another reason a 422 Unprocessable Entity is returned with the error(s) in the response body.
 
