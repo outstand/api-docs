@@ -104,9 +104,10 @@ Note: The `From` header can be the user's username or url encoded email address.
 
 ## Endpoints
 
-The current version of the API is v1. This is reflected in the URL used to access the endpoint. For example, to access the contacts endpoint you would use the following:
+The current version of the API is v1. This is reflected in the URL used to access the endpoint. For example, to access the contacts endpoint you could use either of the following:
 
 ```
+/api/v1/contacts
 /api/v1/contacts.json
 ```
 
