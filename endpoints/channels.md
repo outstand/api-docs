@@ -6,8 +6,8 @@
 
 * [Get Channels](#get-channels)
 * [Get Channel](#get-channel)
-* [Subscribing to a Channel](#subscribeing-to-a-channel)
-* [Unsubscribing to a Channel](#unsubscribeing-to-a-channel)
+* [Subscribing to a Channel](#subscribing-to-a-channel)
+* [Unsubscribing to a Channel](#unsubscribing-to-a-channel)
 
 ## Channel
 
