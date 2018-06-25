@@ -110,7 +110,7 @@ The current version of the API is v1. This is reflected in the URL used to acces
 /api/v1/contacts.json
 ```
 
-
+* [Channels](https://github.com/outstand/api-docs/blob/master/endpoints/channels.md)
 * [Contacts](https://github.com/outstand/api-docs/blob/master/endpoints/contacts.md)
   * [Addresses](https://github.com/outstand/api-docs/blob/master/endpoints/addresses.md)
   * [Emails](https://github.com/outstand/api-docs/blob/master/endpoints/emails.md)
