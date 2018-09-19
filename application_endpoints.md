@@ -6,6 +6,15 @@ The following endpoints are only available through OAuth2 Client Credentials Flo
 
 The endpoints described here are considered 'application level endpoints' which is why the oauth tokens you obtain through the client credentials flow aren't tied to a user.  These tokens _cannot_ be used to access 'user level endpoints' and regular user oauth tokens cannot be used to access these application level endpoints.
 
+### OAuth 2 Authentication
+
+1. [Grab an OAuth 2 library](http://oauth.net/code/)
+2. Contact support to register your application. You will then be assigned a `client_id` and `client_secret`.
+3. Configure your OAuth 2 library with:
+  * `client_id`, `client_secret`
+  * `grant_type` should be `client_credentials`
+  * `https://app.outstand.com/oauth/token` to get access tokens
+4. Try making an authorized request to `https://app.outstand.com/oauth/token/info`
 
 ## User Endpoints
 
