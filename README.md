@@ -10,7 +10,9 @@ Our API endpoints are broken up into two categories: application level and user 
 
 Outstand clients with their own white label can gain access to our [Application endpoints](https://github.com/outstand/api-docs/blob/master/application_endpoints.md).
 
-## Authentication
+Note: Application Level Endpoints have their own Authentication documentation.
+
+## User Level Endpoints
 
 ### OAuth 2 Authentication
 
@@ -20,6 +22,7 @@ This is our preferred way of allowing users to grant access to their accounts fr
 2. Contact support to register your application and provide us with a `redirect_uri`. You will then be assigned a `client_id` and `client_secret`. (The `redirect_uri` is where we will send the verification code. e.g. `https://example.com/auth/outstand/callback`)
 3. Configure your OAuth 2 library with:
   * `client_id`, `client_secret`, and `redirect_uri`
+  * `grant_type` should be `authorization_code`
   * `https://app.outstand.com/oauth/authorize` to request authorization
   * `https://app.outstand.com/oauth/token` to get access tokens
 4. Try making an authorized request to `https://app.outstand.com/oauth/token/info`
