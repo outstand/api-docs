@@ -25,8 +25,16 @@ _Note: This API is scoped to your organization’s white label._
 ```json
 {
   "username": "user12345",
+  "oauth2_token": {
+    "access_token": "<access token>",
+    "token_type": "Bearer",
+    "expires_in": 7200,
+    "refresh_token": "<refresh token>",
+    "scope": "identity read write",
+    "created_at": <created at time in seconds>
+  },
+  "authentication_token": "<legacy auth token>",
   "email": "joe.smith@example.com",
-  "auth_token": "abc123",
   "status": "active"
 }
 ```
@@ -34,6 +42,8 @@ _Note: This API is scoped to your organization’s white label._
 Note: status can be of type: `active`, `dunning`, `disabled`, `suspended`, `canceled`, `incomplete`, `needs_plan`.
 
 When provisioning a user that requires payment information, the user will be created with an initial status of `needs_plan`. When the user logs in for the first time, they will see a page where they will select their plan. Upon selecting a plan, the user will be set to `incomplete`. Once the user adds valid payment information, the user will transition to `active`. If payment information is not required, the user will transition from `needs_plan` to  `active` upon selecting a plan.
+
+The `oauth2_token` part of the response matches the format of our normal token endpoint.  Note that requests for the user's token information will return the last valid token and refresh token.  If your access token is expired, you should use the refresh token to obtain a new one.
 
 ## Get Users
 `GET /api/v1/users.json` - Returns all users available to the Third Party Service
@@ -83,6 +93,8 @@ _Note: `time_zone` defaults to "Eastern Time (US & Canada)"_
 On success, this returns 201 Created, the user attributes in the response body, and the location header of the new user. If the request is invalid a 422 Unprocessable Entity is returned with the error(s) in the response body.
 
 * Possible locations for phone numbers: "Work", "Home", "Mobile", "Skype", "Toll-Free", "Fax", "Other"
+
+_See the User Attributes section above for information on the response body._
 
 ## Get User
 `GET /api/v1/users/:username.json` - Returns the user attributes of user with specified username.
