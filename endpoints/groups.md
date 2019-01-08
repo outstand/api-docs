@@ -9,6 +9,8 @@
 * [Create Group](#create-group)
 * [Update Group](#update-group)
 * [Delete Group](#delete-group)
+* [Add Contacts to Group](#add-contacts-to-group)
+* [Remove Contacts from Group](#remove-contacts-from-group)
 
 ## Group
 
@@ -89,3 +91,37 @@ On success, this returns ```204 No Content```. If the request is invalid, a ```4
 ## Delete Group
 
 * ```DELETE /groups/:id.json``` will delete the specified group and return ```204 No Content``` on success. If the user does not have permission to delete the group, it returns ```404 Not Found```.
+
+## Add Contacts to Group
+
+* ```POST /groups/:id/contacts.json``` has two forms:
+
+### Add Existing Contacts by ids
+
+* ```POST /groups/:id/contacts.json``` adds the contacts specified by the `ids` param to the specified group.
+
+```json
+{
+  "ids": [1, 2, 3]
+}
+```
+
+On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/outstand/api-docs/blob/master/422.md))
+
+### Create New Contact inside Group
+
+* ```POST /groups/:id/contacts.json``` adds the contacts specified by the `ids` param to the specified group.
+
+Full documentation can be found here: [https://github.com/outstand/api-docs/blob/master/endpoints/contacts.md#create-contact](https://github.com/outstand/api-docs/blob/master/endpoints/contacts.md#create-contact)
+
+## Remove Contacts from Group
+
+* ```DELETE /groups/:id/contacts.json``` removes the contacts specified by the `ids` param from the specified group.
+
+```json
+{
+  "ids": [1, 2, 3]
+}
+```
+
+On success, this returns ```204 No Content```. If the request is invalid, a ```422 Unprocessable Entity``` is returned with the error(s) in the response body. (See [422 Unprocessable Entity](https://github.com/outstand/api-docs/blob/master/422.md))
