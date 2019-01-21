@@ -144,3 +144,19 @@ You can paginate the result set by passing in the following parameters for the r
 When you request a page that does not exist you will receive a ```404 Not Found```.
 
 *Note:* ```page``` defaults to 1 and ```per_page``` defaults to the maximum of 100.
+
+## Rate Limits
+
+Our API has a default rate limit of 300 requests per 5 minute window. You'll receive a `429 Too Many Requests` response if you send more requests than you're allotted. You can implement automatic backoff by relying on the `Retry-After` header included in all `429` responses.
+
+If you have a use case that requires more requests than the default, contact us. If approved, you'll receive a bypass token that should be passed in all API requests like so:
+
+```
+GET /api/v1/contacts.json HTTP/1.1
+
+Host: app.outstand.com
+Authorization: Bearer <oauth token here>
+X-Ratelimit-Bypass: <bypass token here>
+```
+
+The bypass token bypasses the default rate limit and will instead give you an agreed upon rate limit.
