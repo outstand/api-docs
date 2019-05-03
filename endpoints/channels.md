@@ -34,6 +34,7 @@ Returns a `200 OK` with an array of channels. (See [Channel](#channel) for JSON 
 ### Optional Query Params
 
 * `page` & `per_page` see [Pagination](https://github.com/outstand/api-docs#pagination)
+* `managed` filters the list of channels to channels whose subscription is managed by the private label. Possible values are `true` and `false`. With a value of `true`, the channels list will **only** contain channels managed by the private label. With a value of `false`, the channels returned will be all channels that are **not** managed by the private label. (e.g. `api/v1/channels?managed=true`)
 
 ## Get Channel
 
