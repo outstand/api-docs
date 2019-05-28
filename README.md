@@ -89,6 +89,21 @@ with body:
 
 You'll receive a `200 OK` with a new `access_token` and `refresh_token` in the response body.
 
+### Single Sign-On (SSO)
+
+Using the access token from the user you would like to login as, you can use SSO in two ways. You can either send the `access_token` in the `Authorization` header:
+
+```
+(POST|GET) /sso
+Authorization: Bearer ACCESS_TOKEN
+```
+
+or use the `access_token` parameter:
+
+```
+(POST|GET) /sso?access_token=ACCESS_TOKEN
+```
+
 ### Token Authentication (Deprecated)
 
 Every request must be made with the account's API token in the headers of the request. Your account's API token can be found on the "User Settings" page inside of the "Your Account" area. For example, to access the contacts endpoint you would use the following:
