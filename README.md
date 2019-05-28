@@ -98,11 +98,13 @@ Using the access token from the user you would like to login as, you can use SSO
 Authorization: Bearer ACCESS_TOKEN
 ```
 
-or use the `access_token` parameter:
+or use the `access_token` `GET` parameter:
 
 ```
-(POST|GET) /sso?access_token=ACCESS_TOKEN
+GET /sso?access_token=ACCESS_TOKEN
 ```
+
+**Note:** You can also `POST` to the SSO endpoint and send the `access_token` in the request body.
 
 ### Token Authentication (Deprecated)
 
