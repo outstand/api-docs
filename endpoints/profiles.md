@@ -123,6 +123,7 @@ On success, this returns ```201 Created```, [JSON representation](#profile) in r
 * ```PUT /profiles/:id.json``` updates profile from parameters
 
 ```json
+  "id": 67324
   "profile_name": "Updated Profile Name",
   "photo": "file upload object",
   "email": "john@example.com",
