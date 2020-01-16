@@ -14,13 +14,11 @@ The profile contains the contact information as well as the branding information
 
 ## Profile
 
-*Note:* ```first_name``` , ```last_name```, and ```email``` are required.
-
 ```json
 {
   "id": 1,
   "profile_name": "Default Profile",
-  "photo": "https://d21y27je7ptf17.cloudfront.net/image/upload/c_thumb,dpr_2.0,g_faces,h_120,w_120,z_0.7/rplxklponamcoy3ao99c.png",
+  "photo": "https://...",
   "email": "john@example.com",
   "first_name": "John",
   "last_name": "Smith",
@@ -50,11 +48,15 @@ The profile contains the contact information as well as the branding information
   "salutation": "Dear,",
   "valediction": "Best wishes,",
   "legal_footer": "Legal footer text",
-  "logo": "https://d2qnc9lf0j59c3.cloudfront.net/accounts/63220/brand_identities/101570/size_320x140/new_logo.jpg?1550612260",
+  "logo": "https://...",
   "color": "#4B7B47",
   "default": true
 }
 ```
+__*Note:*__ ```first_name``` , ```last_name```, and ```email``` are required.
+Any profile __created__ or __updated__ with ```email``` supplied will automatically receive a verification email.
+Accepted ```photo``` and ```logo``` formats __bmp__, __gif__, __jpg__, and __png__.
+Max ```photo``` and ```logo``` file size  __10MB__.
 
 ## GET Profiles
 
@@ -74,7 +76,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
 
 ```json
   "profile_name": "New Profile Name",
-  "photo": "file upload object",
+  "photo": <file>,
   "email": "john@example.com",
   "first_name": "John",
   "last_name": "Smith",
@@ -94,7 +96,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
   "phone_2_location": "Work",
   "phone_3": "323-323-3234",
   "phone_3_location": "Other",
-  "website": "https://john-smith.com",
+  "website": "https://example.com",
   "twitter": "https://twitter.com/example_user",
   "linkedin": "https://linkedin.com/example_user",
   "facebook": "https://facebook.com/example_user",
@@ -103,7 +105,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
   "salutation": "Dear,",
   "valediction": "Best wishes,",
   "legal_footer": "Legal footer text",
-  "logo": "file upload object",
+  "logo": <file>,
   "color": "#4B7B47"
 }
 ```
@@ -112,7 +114,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
 Alternatively you can supply ```remote_photo_url``` instead of photo.
 ```json
 {
-  "remote_photo_url": "https://files.amazonaws.com/photos/photo.jpg"
+  "remote_photo_url": "https://example.com/photo.jpg"
 }
 ```
 
@@ -123,9 +125,8 @@ On success, this returns ```201 Created```, [JSON representation](#profile) in r
 * ```PUT /profiles/:id.json``` updates profile from parameters
 
 ```json
-  "id": 67324
   "profile_name": "Updated Profile Name",
-  "photo": "file upload object",
+  "photo": <file>,
   "email": "john@example.com",
   "first_name": "John",
   "last_name": "Smith",
@@ -145,7 +146,7 @@ On success, this returns ```201 Created```, [JSON representation](#profile) in r
   "phone_2_location": "Work",
   "phone_3": "323-323-3234",
   "phone_3_location": "Other",
-  "website": "https://john-smith.com",
+  "website": "https://example.com",
   "twitter": "https://twitter.com/example_user",
   "linkedin": "https://linkedin.com/example_user",
   "facebook": "https://facebook.com/example_user",
@@ -154,7 +155,7 @@ On success, this returns ```201 Created```, [JSON representation](#profile) in r
   "salutation": "Dear,",
   "valediction": "Best wishes,",
   "legal_footer": "Legal footer text",
-  "logo": "file upload object",
+  "logo": <file>,
   "color": "#4B7B47"
 }
 ```
@@ -169,7 +170,7 @@ You can supply ```delete_photo``` to remove the photo from the profile.
 Alternatively you can supply ```remote_photo_url``` to update the photo instead of photo.
 ```json
 {
-  "remote_photo_url": "https://files.amazonaws.com/photos/photo.jpg"
+  "remote_photo_url": "https://example.com/photo.jpg"
 }
 ```
 
