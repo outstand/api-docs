@@ -110,6 +110,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
   "color": "#4B7B47"
 }
 ```
+__*Note:*__ If you are sending us files __(photo, logo)__, you would send us this information as multipart form data. If you are not sending files, you can ```POST``` a JSON body.
 
 ### Optional Params
 Alternatively you can supply ```remote_photo_url``` instead of photo.
@@ -160,7 +161,7 @@ On success, this returns ```201 Created```, [JSON representation](#profile) in r
   "color": "#4B7B47"
 }
 ```
-
+__*Note:*__ If you are sending us files __(photo, logo)__, you would send us this information as multipart form data. If you are not sending files, you can ```PUT``` a JSON body.
 ### Optional Params
 You can supply ```delete_photo``` to remove the photo from the profile.
 ```json
