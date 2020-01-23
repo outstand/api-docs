@@ -57,7 +57,6 @@ __*Note:*__ ```first_name``` , ```last_name```, and ```email``` are required.
 Any profile __created__ or __updated__ with ```email``` supplied will automatically receive a verification email.
 Accepted ```photo``` and ```logo``` formats are __bmp__, __gif__, __jpg__, and __png__.
 Max ```photo``` and ```logo``` file size is __10MB__.
-In the returned serialized profile ```photo``` and ```logo``` are returned as url's.
 
 ## GET Profiles
 
