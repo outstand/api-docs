@@ -112,7 +112,7 @@ Returns a ```200 OK``` on success and ```404 Not Found``` if profile does not ex
 __*Note:*__ If you are sending us files __(photo, logo)__, you would send us this information as multipart form data. If you are not sending files, you can ```POST``` a JSON body.
 
 ### Optional Params
-Alternatively you can supply ```remote_photo_url``` instead of photo or ```remote_logo_url``` instead of a logo. These URLs will need to be publically accessible.
+Alternatively, you can supply a publicly accessible URL for the photo and logo with the following params:
 ```json
 {
   "remote_photo_url": "https://example.com/photo.jpg",
@@ -169,7 +169,7 @@ You can supply ```delete_photo``` to remove the photo from the profile.
   "delete_photo": 1
 }
 ```
-Alternatively you can supply ```remote_photo_url``` instead of photo or ```remote_logo_url``` instead of a logo. These URLs will need to be publically accessible.
+Alternatively, you can supply a publicly accessible URL for the photo and logo with the following params:
 ```json
 {
   "remote_photo_url": "https://example.com/photo.jpg",
