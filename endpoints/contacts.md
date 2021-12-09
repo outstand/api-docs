@@ -7,6 +7,7 @@
 * [Get Contacts](#get-contacts)
 * [Get Contact](#get-contact)
 * [Create Contact](#create-contact)
+* [Batch Create Contacts](#batch-create-contacts)
 * [Update Contact](#update-contact)
 * [Delete Contact](#delete-contact)
 
@@ -85,6 +86,7 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 ```json
 {
   "first_name": "John",
+  "middle_initial": "P",
   "last_name": "Smith",
   "company_name": "Trouble, Inc.",
   "title": "Chief Troublemaker",
@@ -111,6 +113,88 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
   }]
 }
 ```
+
+## Batch Create Contacts
+
+* ```POST /contacts/batch.json``` creates an async contact import from parameters
+
+```json
+{
+  "contacts": [
+    {
+      "first_name": "John",
+      "middle_initial": "P",
+      "last_name": "Smith"
+      "company_name": "Trouble, Inc.",
+      "title": "Chief Troublemaker",
+      "emails": [
+        {
+          "address": "john@outstand.com"
+        },
+        {
+          "address": "notjohn@outstand.com"
+        }
+      ],
+      "phones": [{
+        "number": "555 555 1212",
+        "location": "Work"
+      }],
+      "addresses": [{
+        "location": "Work",
+        "address_line_1": "Suite 302",
+        "address_line_2": "57 S. Main St",
+        "city": "Harrisonburg",
+        "state_region_province": "VA",
+        "postal_code": "22801",
+        "country": "United States"
+      }],
+      "web_addresses": [
+        {
+          "url": "https://example.com",
+          "url_type": "Website"
+        }
+      ]
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Smith"
+    }
+  ]
+}
+```
+
+On success, this returns ```201 Created```, with a JSON response containing the embedded import data. The actual import success or failure is not currently available via the API but can be viewed with the logged in user via the UI at ```/imports```.
+
+### Groups
+
+This endpoint can also add the contacts to a new or existing group. The ```group_name``` parameter is used to create a group whereas the ```group_id``` parameter is used to add the contacts to the specified existing group.
+
+```json
+{
+  "contacts": [
+    {
+      "first_name": "John",
+      "last_name": "Smith",
+    }
+  ],
+  "group_name": "New Group"
+}
+```
+
+or
+
+```json
+{
+  "contacts": [
+    {
+      "first_name": "John",
+      "last_name": "Smith",
+    }
+  ],
+  "group_id": 4
+}
+```
+
 
 ## Update Contact
 
