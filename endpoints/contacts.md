@@ -193,6 +193,7 @@ or
   ],
   "group_id": 4
 }
+```
 
 
 ## Update Contact
