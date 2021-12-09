@@ -120,7 +120,7 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 
 ```json
 {
-  contacts: [
+  "contacts": [
     {
       "first_name": "John",
       "middle_initial": "P",
