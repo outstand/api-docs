@@ -163,7 +163,7 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 }
 ```
 
-On success, this returns ```201 Created```, with an unhelpful Import JSON response.
+On success, this returns ```201 Created```, with a JSON response containing the embedded import data. The actual import success or failure is not currently available via the API but can be viewed with the logged in user via the UI at ```/imports```.
 
 ### Groups
 
