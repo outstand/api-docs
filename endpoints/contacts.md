@@ -167,7 +167,7 @@ On success, this returns ```201 Created```, with an unhelpful Import JSON respon
 
 ### Groups
 
-This endpoint can also add the contacts to a new or existing group. The `group_name` parameter is used to create a group whereas the `group_id` parameter is used to add the contacts to the specified existing group.
+This endpoint can also add the contacts to a new or existing group. The ```group_name``` parameter is used to create a group whereas the ```group_id``` parameter is used to add the contacts to the specified existing group.
 
 ```json
 {
