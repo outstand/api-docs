@@ -165,6 +165,35 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 
 On success, this returns ```201 Created```, with an unhelpful Import JSON response.
 
+### Groups
+
+This endpoint can also add the contacts to a new or existing group. The `group_name` parameter is used to create a group whereas the `group_id` parameter is used to add the contacts to the specified existing group.
+
+```json
+{
+  "contacts": [
+    {
+      "first_name": "John",
+      "last_name": "Smith",
+    }
+  ],
+  "group_name": "New Group"
+}
+```
+
+or
+
+```json
+{
+  "contacts": [
+    {
+      "first_name": "John",
+      "last_name": "Smith",
+    }
+  ],
+  "group_id": 4
+}
+
 
 ## Update Contact
 
