@@ -223,7 +223,7 @@ or
 
 * ```PUT /contacts/:id.json``` updates contact from parameters
 
-Contacts have four different related types: phones, emails, addresses, and web_addresses (events are not supported).  Additionally, phones, emails, and addresses can have primaries set.
+Contacts have four different related types: phones, emails, addresses, and web_addresses (events are not supported by this endpoint).  Additionally, phones, emails, and addresses can have primaries set.
 The update contact endpoint supports two modes of operation with regards to those related types: normal and replace. In normal mode, you can add and update existing related types. You can use replace mode to overwrite or delete existing data.
 
 You can invoke replace mode by sending the header `X-Outstand-Replace: true`.  Any other value (or the header's absence) will result in normal mode.
