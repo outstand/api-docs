@@ -114,6 +114,22 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
 }
 ```
 
+It is also possible to create events for a contact through the ```events``` key. The parameters are the same as the [Events API](https://github.com/outstand/api-docs/blob/main/endpoints/events.md). Here's an example POST body:
+
+```json
+{
+  "first_name": "John",
+  "last_name": "Smith",
+  "events: [
+    {
+      "time": "1980-05-07T14:00:00Z",
+      "category_name": "Birthday",
+      "recurrence": "Yearly"
+    }
+  ]
+}
+```
+
 ## Batch Create Contacts
 
 * ```POST /contacts/batch.json``` creates an async contact import from parameters
@@ -152,6 +168,13 @@ You can create a contact, email, phone, and address in one step.  Here's an exam
         {
           "url": "https://example.com",
           "url_type": "Website"
+        }
+      ],
+      "events: [
+        {
+          "time": "1980-05-07T14:00:00Z",
+          "category_name": "Birthday",
+          "recurrence": "Yearly"
         }
       ]
     },
@@ -200,7 +223,7 @@ or
 
 * ```PUT /contacts/:id.json``` updates contact from parameters
 
-Contacts have four different related types: phones, emails, addresses, and web_addresses.  Additionally, phones, emails, and addresses can have primaries set.
+Contacts have four different related types: phones, emails, addresses, and web_addresses (events are not supported).  Additionally, phones, emails, and addresses can have primaries set.
 The update contact endpoint supports two modes of operation with regards to those related types: normal and replace. In normal mode, you can add and update existing related types. You can use replace mode to overwrite or delete existing data.
 
 You can invoke replace mode by sending the header `X-Outstand-Replace: true`.  Any other value (or the header's absence) will result in normal mode.
