@@ -21,11 +21,34 @@
   "category_name": "Birthday",
   "category_id" : 1,
   "details": "Lorem ipsum...",
+  "recurrence": "Yearly",
   "created_at": "2013-05-07T17:51:05Z",
   "updated_at": "2013-05-07T17:51:05Z",
   "parent": "/contacts/:id.json" || "/groups/:id.json"
 }
 ```
+
+The valid values for ```recurrence``` are:
+- Never
+- Daily 
+- Weekly 
+- Monthly 
+- Yearly
+
+The valid global categories are:
+- Follow Up
+- Phone Call
+- Anniversary
+- Birthday
+- Meeting
+- Check In
+- Thank
+- Send Email
+- Send Info
+- Send Proposal
+- Deadline
+
+All available event categories can be listed with the [Event Categories API](https://github.com/outstand/api-docs/blob/main/endpoints/event_categories.md).
 
 ## Get Events
 
