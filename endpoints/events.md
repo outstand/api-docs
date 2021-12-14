@@ -30,6 +30,19 @@
 
 The valid values for ```recurrence``` are: Never Daily Weekly Monthly Yearly
 
+The valid global categories are:
+- Follow Up
+- Phone Call
+- Anniversary
+- Birthday
+- Meeting
+- Check In
+- Thank
+- Send Email
+- Send Info
+- Send Proposal
+- Deadline
+
 ## Get Events
 
 * ```GET /contacts/:contact_id/events.json``` returns all events for specified contact.
