@@ -48,6 +48,8 @@ The valid global categories are:
 - Send Proposal
 - Deadline
 
+All available event categories can be listed with the [Event Categories API](https://github.com/outstand/api-docs/blob/main/endpoints/event_categories.md).
+
 ## Get Events
 
 * ```GET /contacts/:contact_id/events.json``` returns all events for specified contact.
