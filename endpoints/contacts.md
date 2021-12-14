@@ -120,7 +120,7 @@ It is also possible to create events for a contact through the ```events``` key.
 {
   "first_name": "John",
   "last_name": "Smith",
-  "events: [
+  "events": [
     {
       "time": "1980-05-07T14:00:00Z",
       "category_name": "Birthday",
@@ -170,7 +170,7 @@ It is also possible to create events for a contact through the ```events``` key.
           "url_type": "Website"
         }
       ],
-      "events: [
+      "events": [
         {
           "time": "1980-05-07T14:00:00Z",
           "category_name": "Birthday",
