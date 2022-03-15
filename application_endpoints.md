@@ -207,8 +207,8 @@ Key | Type | Description
 `resource_type` | `string` | "Contact", etc
 `resource_id` | `string` | The id of the resource that caused the event.
 `event` | `string` | The short form of the resource event.
-`username` | `string` | The unique username of the user. Will be deprecated.
-`user_id` | `string` | The unique id of the user. Will be deprecated.
+`username` | `string` | The unique username of the user. **Will be deprecated.**
+`user_id` | `string` | The unique id of the user. **Will be deprecated.**
 `account_id` | `string` | The unique id of the account.
 
 An example contact creation:
