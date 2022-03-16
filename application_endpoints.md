@@ -151,9 +151,9 @@ _Note: Be sure to use a constant time comparison method like `secure_compare`_
 Name | Description
 -----|------------
 user_status | Triggered when a user's status changes.
-create_contact | Triggered on contact create
-update_contact | Triggered on contact update
-delete_contact | Triggered on contact delete
+contact_create | Triggered on contact create
+contact_update | Triggered on contact update
+contact_delete | Triggered on contact delete
 
 ### Payloads
 
@@ -220,14 +220,14 @@ Host: yourserver.com
 User-Agent: Outstand-Webhook
 Content-Type: application/json
 Content-Length: <length>
-X-Outstand-Event: create_contact
+X-Outstand-Event: contact_create
 X-Outstand-Id: 123
 X-Outstand-Signature: sha256=<signature>
 
 {
   "resource_type": "Contact",
   "resource_id": "21",
-  "event": "create",
+  "event": "contact_create",
   "username": "user12345",
   "user_id": "4862",
   "account_id": "7829"
