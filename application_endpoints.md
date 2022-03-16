@@ -151,6 +151,9 @@ _Note: Be sure to use a constant time comparison method like `secure_compare`_
 Name | Description
 -----|------------
 user_status | Triggered when a user's status changes.
+contact_create | Triggered on contact create
+contact_update | Triggered on contact update
+contact_delete | Triggered on contact delete
 
 ### Payloads
 
@@ -194,3 +197,39 @@ Key | Type | Description
 ----|------|------------
 `username` | `string` | The unique username of the user.
 `status` | `string` | The user's status.
+
+#### Resource Events (Contact, etc)
+
+Payload:
+
+Key | Type | Description
+----|------|------------
+`resource_type` | `string` | "Contact", etc
+`resource_id` | `string` | The id of the resource that caused the event.
+`event` | `string` | The short form of the resource event.
+`username` | `string` | The unique username of the user. **Will be deprecated.**
+`user_id` | `string` | The unique id of the user. **Will be deprecated.**
+`account_id` | `string` | The unique id of the account.
+
+An example contact creation:
+
+```
+POST /payload HTTP/1.1
+
+Host: yourserver.com
+User-Agent: Outstand-Webhook
+Content-Type: application/json
+Content-Length: <length>
+X-Outstand-Event: contact_create
+X-Outstand-Id: 123
+X-Outstand-Signature: sha256=<signature>
+
+{
+  "resource_type": "Contact",
+  "resource_id": "21",
+  "event": "contact_create",
+  "username": "user12345",
+  "user_id": "4862",
+  "account_id": "7829"
+}
+```
