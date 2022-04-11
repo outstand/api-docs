@@ -154,6 +154,9 @@ user_status | Triggered when a user's status changes.
 contact_create | Triggered on contact create
 contact_update | Triggered on contact update
 contact_delete | Triggered on contact delete
+group_create | Triggered on group create
+group_update | Triggered on group update
+group_delete | Triggered on group delete
 
 ### Payloads
 
